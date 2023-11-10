@@ -15,6 +15,7 @@ COM =\
 	components/disk\
 	components/entropy\
 	components/hostname\
+	components/iocheck\
 	components/ip\
 	components/kernel_release\
 	components/keyboard_indicators\
