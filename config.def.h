@@ -77,7 +77,6 @@ static const struct arg args[] = {
 	{ ram_total,       "%s ",     NULL },
 	{ disk_free,       " %s/",   "/" },
 	{ disk_total,      "%s ",     "/" },
-	{ alsa_master_vol, " %s ",   NULL },
 	{ battery_perc,    " %s%% ", "BAT0" },
 	{ datetime,        " %s",    "%F %T" },
 };
