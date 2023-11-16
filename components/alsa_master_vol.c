@@ -35,9 +35,10 @@ alsa_master_vol(void)
 	}
 	pclose(fp);
 
-	// If equal, the strcmp() will return 0;
-	// So here if not equal, the if will capture.
-	if (strcmp("on", recorder[ITEMS - 1])) // If not equal.
-		return bprintf("MUTE");
-	return bprintf("%s", recorder[0]);
+	for (i = 0; i < ITEMS; i++)
+		// If equal, the strcmp() will return 0;
+		// So here if equal, the if will capture.
+		if (!strcmp("on", recorder[i])) // If equal.
+			return bprintf("%s", recorder[0]);
+	return bprintf("MUTE");
 }
